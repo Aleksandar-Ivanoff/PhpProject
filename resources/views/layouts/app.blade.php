@@ -88,23 +88,21 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                        <a class="page-scroll" href="/">Home</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#event">Schedules</a>
-                                    </li>
-                                   
                                     <li class="nav-item">
                                         <a class="page-scroll" href="/#contact">Contact</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="/#gallery">Gallery</a>
                                     </li>
+
+                                    @auth
                                     <li class="nav-item">
                                         <a class="page-scroll" href="/events">Events</a>
                                     </li>
                                     
-                                    @auth
+                                   
                                     <li class="nav-item" style="margin-left: 80px">
                                         <a class="page-scroll" ><span>Welcome, {{ Auth::user()->name }}</span></a>
 

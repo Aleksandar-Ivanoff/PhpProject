@@ -54,6 +54,7 @@
                                       <h4 class="event-title">{{ $event-> name}}</h4>
                                        <p class="text">{{$event->description  }}</p>
                                        <ul class="event-meta">
+                                          <li>Date: {{ $event->date }}</li>
                                           <li>Start: {{$event->start  }}</li>
                                           <li>Location: {{$event->location  }}</li>
                                           <li>Sport: {{$event->sport->name  }}</li>
