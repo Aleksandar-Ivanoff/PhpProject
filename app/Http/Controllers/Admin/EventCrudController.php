@@ -160,7 +160,7 @@ class EventCrudController extends CrudController
     public function allEvents(){
         
         $events = Event::paginate(3);
-        dd($events);
+        
         return view('events.events',[
             "events"=>$events
         ]);
