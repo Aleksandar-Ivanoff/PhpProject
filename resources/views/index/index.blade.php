@@ -352,7 +352,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-title text-center pb-20">
-                    <h2 class="title">Who’s Speaking</h2>
+                    <h2 class="title">Our Team</h2>
                     <p class="text">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem reiciendis odit sed, vero amet blanditiis cule dicta iriure at phaedrum.</p>
                 </div> <!-- section title -->
             </div>
@@ -400,7 +400,7 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="team-image">
-                        <img src="assets/images/team-3.jpg" alt="Team">
+                        <img src="assets/images/svetlio.png" alt="Team" height="470" width="360">
                     </div>
                     <div class="team-content">
                         <div class="team-social">
@@ -411,7 +411,7 @@
                                 <li><a href="#"><i class="lni-pinterest"></i></a></li>
                             </ul>
                         </div>
-                        <h4 class="team-name"><a href="#">Adam Smith</a></h4>
+                        <h4 class="team-name"><a href="#">Svetoslav Minev</a></h4>
                         <span class="sub-title">UX Speacilist</span>
                     </div>
                 </div> <!-- single team -->
@@ -562,92 +562,6 @@
 
 <!--====== PRICING PART START ======-->
 
-<section id="pricing" class="pricing-area pt-115 pb-200">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center pb-20">
-                    <h2 class="title">Ticket Pricing</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem reiciendis odit sed, vero amet blanditiis cule dicta iriure at phaedrum.</p>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-8 col-sm-9">
-                <div class="single-pricing text-center mt-30 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                    <div class="pricing-name">
-                        <h4 class="pricing-title">BASIC PASS</h4>
-                        <span class="sub-title">Price Excluding 20% VAT</span>
-                    </div>
-                    <div class="pricing-price">
-                        <span>$ 29.00</span>
-                        <p class="text">Per Day</p>
-                    </div>
-                    <div class="pricing-list">
-                        <ul>
-                            <li>Pro  Regular Seating</li>
-                            <li>Best Comfortable Seat</li>
-                            <li>Coffee Break With Snacks</li>
-                            <li>One Workshop For Practise</li>
-                            <li>Course Certificate</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-btn">
-                        <a class="main-btn" href="#">Buy Ticket</a>
-                    </div>
-                </div> <!-- single pricing -->
-            </div>
-            <div class="col-lg-4 col-md-8 col-sm-9">
-                <div class="single-pricing active text-center mt-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                    <div class="pricing-name">
-                        <h4 class="pricing-title">STANDARD PASS</h4>
-                        <span class="sub-title">Price Excluding 20% VAT</span>
-                    </div>
-                    <div class="pricing-price">
-                        <span>$ 39.00</span>
-                        <p class="text">Per Day</p>
-                    </div>
-                    <div class="pricing-list">
-                        <ul>
-                            <li>Pro  Regular Seating</li>
-                            <li>Best Comfortable Seat</li>
-                            <li>Coffee Break With Snacks</li>
-                            <li>One Workshop For Practise</li>
-                            <li>Course Certificate</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-btn">
-                        <a class="main-btn main-btn-2" href="#">Buy Ticket</a>
-                    </div>
-                </div> <!-- single pricing -->
-            </div>
-            <div class="col-lg-4 col-md-8 col-sm-9">
-                <div class="single-pricing text-center mt-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
-                    <div class="pricing-name">
-                        <h4 class="pricing-title">PREMIUM PASS</h4>
-                        <span class="sub-title">Price Excluding 20% VAT</span>
-                    </div>
-                    <div class="pricing-price">
-                        <span>$ 49.00</span>
-                        <p class="text">Per Day</p>
-                    </div>
-                    <div class="pricing-list">
-                        <ul>
-                            <li>Pro  Regular Seating</li>
-                            <li>Best Comfortable Seat</li>
-                            <li>Coffee Break With Snacks</li>
-                            <li>One Workshop For Practise</li>
-                            <li>Course Certificate</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-btn">
-                        <a class="main-btn" href="#">Buy Ticket</a>
-                    </div>
-                </div> <!-- single pricing -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
 
 <!--====== PRICING PART ENDS ======-->
 

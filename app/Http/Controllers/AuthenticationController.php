@@ -34,11 +34,11 @@ class AuthenticationController extends Controller
     public function signInUser(Request $request){
 
         $this->validate($request,[
-            'username'=>'required',
+            'name'=>'required',
             'password'=>'required',
         ]);
 
-       if(!auth()->attempt($request->only('username','password'))){
+       if(!auth()->attempt($request->only('name','password'))){
            return back()->with('status','Invalid login details');
        }
 

@@ -95,20 +95,23 @@
                                     </li>
                                    
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#contact">Contact</a>
+                                        <a class="page-scroll" href="/#contact">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#gallery">Gallery</a>
+                                        <a class="page-scroll" href="/#gallery">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/events">Events</a>
                                     </li>
                                     
                                     @auth
                                     <li class="nav-item" style="margin-left: 80px">
-                                        <a class="page-scroll" ><span>Welcome, {{ Auth::user()->username }}</span></a>
+                                        <a class="page-scroll" ><span>Welcome, {{ Auth::user()->name }}</span></a>
 
                                         
                                     </li>
 
-                                    <li class="nav-item" style="margin-left: 80px">
+                                    <li class="nav-item" style="margin-left: 30px">
                                         <a class="page-scroll" href="/logout" >Logout</a>
                                     </li>
                                     @endauth
