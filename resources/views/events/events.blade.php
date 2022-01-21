@@ -18,7 +18,7 @@
                     <div>
                         <div class="mx-auto pull-right">
                             <div class="">
-                                <form action="/events" method="GET" role="search">
+                                <form action="/search" type="GET" role="search">
                                     <div class="input-group">
                                         <span class="input-group-btn">
                                             <button class="btn btn-info lupa-kopche" type="submit" title="Search projects">
@@ -26,12 +26,16 @@
                                                     </span>
                                             </button>
                                         </span>
-                                        <input type="text" class="form-control" name="term" placeholder="Search projects" id="term">
+                                        <input type="text" class="form-control" name="query" placeholder="Search events" id="query">
                                         <!-- <a href="" class=" mt-1">
                                            
                                         </a> -->
                                     </div>
                                 </form>
+                                {{-- <form class="form-inline my-2 my-lg-0" type="get" action="{{ url('/search') }}">
+                                    <input class="form-control mr-sm-2" type="search" name="query" id="" placeholder="Search">
+                                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                                </form> --}}
                             </div>
                         </div>
                     </div>
@@ -57,7 +61,7 @@
                                     </div>
                                 </div> <!-- single event -->
                             @endforeach
-
+                            {{ $events->links()}}
                                 @else
                                 <h2>There are no events!</h2>
                                 @endif
@@ -66,10 +70,8 @@
                             
                         </div>
                                           
-                        
-                        
                     </div>
-                    {{ $events->links()}}
+                    
                 </div> <!-- event tab -->
             </div>
         </div> <!-- row -->

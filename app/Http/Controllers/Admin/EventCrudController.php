@@ -166,24 +166,26 @@ class EventCrudController extends CrudController
         ]);
     }
 
-    public function getEvents(Request $request){
+    public function search(){
 
-        // $projects = Event::where([
-        //   ['name','!=',null],
-        //   [function($query) use ($request){
-        //       if(($term=$request->term)){
-        //         $query->orWhere('name','LIKE','%',$term,'%')->get();
-        //       }
-        //   }]
-        // ])
-        // ->orderBy('id','desc')
-        // ->paginate(3);
+       $searchTerm= request()->query('query');
+         if($searchTerm){
 
-        // return view('events.events');
+            $events=Event::where('name','LIKE',"%{$searchTerm}%")->paginate(3);
+            
+         
+            //dd(request()->query('query'));
+         }
+         else{
+             $events= Event::simplePaginate(3);
+         }
 
+         return view('events.events')->with('events',$events);
         
 
-        return view('events.events');
+        
+        
+        
     }
 
     

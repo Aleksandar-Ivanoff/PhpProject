@@ -28,4 +28,5 @@ Route::get('/logout',[AuthenticationController::class,'logout']);
 
 //Events Routes
 Route::get('/events',[EventCrudController::class,'allEvents']);
+Route::get('/search',[EventCrudController::class,'search']);
 //Route::get('/events',[EventCrudController::class,'getEvents']);
