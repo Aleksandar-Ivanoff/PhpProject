@@ -3,8 +3,8 @@
 
 You booked {{ $event->name }}
 
-@component('mail::button', ['url' => ''])
-Button Text
+@component('mail::button', ['url' => route('showEvent',$event)])
+View Event
 @endcomponent
 
 Thanks,<br>

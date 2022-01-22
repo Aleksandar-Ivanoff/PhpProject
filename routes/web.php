@@ -30,6 +30,7 @@ Route::get('/logout',[AuthenticationController::class,'logout']);
 //Events Routes
 Route::get('/events',[EventCrudController::class,'allEvents']);
 Route::get('/search',[EventCrudController::class,'search']);
+Route::get('/events/{id}',[EventCrudController::class,'show'])->name('showEvent');
 
 //Profile
 Route::get('/profile',[AuthenticationController::class,'profile']);

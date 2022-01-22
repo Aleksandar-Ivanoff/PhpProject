@@ -176,6 +176,13 @@ class EventCrudController extends CrudController
         ]);
     }
 
+
+    public function show($id){
+
+        $event=Event::find($id);
+        return view('events.show');
+    }
+
     public function search(){
 
         if (!auth()->user()) {

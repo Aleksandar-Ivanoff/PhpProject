@@ -51,7 +51,7 @@
                                       <img src="{{ $event->image }}" alt="EventImage" width="320px" height="200px">
                                    </div>
                                    <div class="event-content media-body">
-                                      <h4 class="event-title">{{ $event-> name}}</h4>
+                                      <h4 class="event-title"><a href="/events/{{ $event->id }}">{{ $event-> name}}</a></h4>
                                        <p class="text">{{$event->description  }}</p>
                                        <ul class="event-meta">
                                           <li>Date: {{ $event->date }}</li>
