@@ -55,4 +55,8 @@ class AuthenticationController extends Controller
 
         return redirect()->route('index');
     }
+
+    public function profile(){
+        return view('profile.profile');
+    }
 }

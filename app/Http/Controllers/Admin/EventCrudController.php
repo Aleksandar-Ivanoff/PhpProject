@@ -7,6 +7,7 @@ use App\Models\Event;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 use Illuminate\Http\Client\Request;
+use Illuminate\Validation\UnauthorizedException;
 
 /**
  * Class EventCrudController
@@ -159,6 +160,10 @@ class EventCrudController extends CrudController
 
     public function allEvents(){
         
+        if (!auth()->user()) {
+            return abort('401','Unathorized action!');
+        }
+
         $events = Event::paginate(3);
         
         return view('events.events',[
@@ -168,6 +173,11 @@ class EventCrudController extends CrudController
 
     public function search(){
 
+        if (!auth()->user()) {
+            return abort('401','Unathorized action!');
+        }
+
+        
        $searchTerm= request()->query('query');
          if($searchTerm){
 

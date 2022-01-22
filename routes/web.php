@@ -31,6 +31,8 @@ Route::get('/logout',[AuthenticationController::class,'logout']);
 Route::get('/events',[EventCrudController::class,'allEvents']);
 Route::get('/search',[EventCrudController::class,'search']);
 
+//Profile
+Route::get('/profile',[AuthenticationController::class,'profile']);
 
 //Booking
 Route::post('/events/{event}/books',[BookEventController::class,'book'])->name('events.book');
