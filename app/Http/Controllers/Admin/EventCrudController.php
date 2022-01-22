@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\EventRequest;
+use App\Mail\EventBooked;
 use App\Models\Event;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 use Illuminate\Http\Client\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\UnauthorizedException;
 
 /**
@@ -164,6 +166,9 @@ class EventCrudController extends CrudController
             return abort('401','Unathorized action!');
         }
 
+        $user = auth()->user();
+       // Mail::to($user)->send(new EventBooked($user,$eve));
+        
         $events = Event::paginate(3);
         
         return view('events.events',[
