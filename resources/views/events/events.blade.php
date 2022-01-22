@@ -60,7 +60,16 @@
                                           <li>Sport: {{$event->sport->name  }}</li>
                                           <li>{{ Str::plural('Booking',$event->bookings->count()) }}: {{ $event->bookings->count() }} </li>
                                       </ul>
-                                      <button>Book event</button>
+                                      
+                                      <form action="{{ route('events.book',$event->id) }}" method="post">
+                                        @csrf
+
+                                        @if($event->bookedBy(auth()->user()))
+                                          @else
+                                           <button>Book event</button>
+                                        @endif
+                                      </form>
+                                     
                                     </div>
                                 </div> <!-- single event -->
                             @endforeach

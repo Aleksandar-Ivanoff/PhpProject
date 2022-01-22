@@ -111,35 +111,7 @@
                                     </div>
                                 </div> <!-- single event -->
 
-                                <div class="single-event d-md-flex mt-30">
-                                    <div class="event-image">
-                                        <img src="assets/images/event-2.jpg" alt="Event">
-                                    </div>
-                                    <div class="event-content media-body">
-                                        <h4 class="event-title">15 FREE PRODUCTIVE DESIGN TOOLS</h4>
-                                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores!</p>
-                                        <ul class="event-meta">
-                                            <li>Start: 12.00 PM</li>
-                                            <li>End: 15.00 PM</li>
-                                            <li>Location: Hall 1 , Building A, Golden Street, Southafrica</li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- single event -->
-
-                                <div class="single-event d-md-flex mt-30">
-                                    <div class="event-image">
-                                        <img src="assets/images/event-3.jpg" alt="Event">
-                                    </div>
-                                    <div class="event-content media-body">
-                                        <h4 class="event-title">GETTING STARTED WITH SKETCHAPP</h4>
-                                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores!</p>
-                                        <ul class="event-meta">
-                                            <li>Start: 12.00 PM</li>
-                                            <li>End: 15.00 PM</li>
-                                            <li>Location: Hall 1 , Building A, Golden Street, Southafrica</li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- single event -->
+                               
                             </div> <!-- event content -->
                         </div>
                         <div class="tab-pane fade" id="day-3" role="tabpanel" aria-labelledby="day-3-tab">

@@ -42,6 +42,10 @@ class Event extends Model
    public function bookings(){
        return $this->hasMany(Bookings::class);
    }
+
+   public function bookedBy(User $user){
+        return $this->bookings->contains('user_id',$user->id);
+   }
     /*
     |--------------------------------------------------------------------------
     | SCOPES

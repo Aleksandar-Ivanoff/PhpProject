@@ -12,4 +12,8 @@ class Bookings extends Model
     protected $table = 'bookings';
 
     protected $guarded = ['id'];
+
+    protected $fillable=[
+      'user_id'
+    ];
 }

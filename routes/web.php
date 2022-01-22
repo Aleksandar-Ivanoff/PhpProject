@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\EventCrudController;
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\BookEventController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\TicketsController;
 use Illuminate\Support\Facades\Route;
@@ -29,4 +30,7 @@ Route::get('/logout',[AuthenticationController::class,'logout']);
 //Events Routes
 Route::get('/events',[EventCrudController::class,'allEvents']);
 Route::get('/search',[EventCrudController::class,'search']);
-//Route::get('/events',[EventCrudController::class,'getEvents']);
+
+
+//Booking
+Route::post('/events/{event}/books',[BookEventController::class,'book'])->name('events.book');
