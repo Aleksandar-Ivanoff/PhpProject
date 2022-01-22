@@ -58,7 +58,9 @@
                                           <li>Start: {{$event->start  }}</li>
                                           <li>Location: {{$event->location  }}</li>
                                           <li>Sport: {{$event->sport->name  }}</li>
+                                          <li>{{ Str::plural('Booking',$event->bookings->count()) }}: {{ $event->bookings->count() }} </li>
                                       </ul>
+                                      <button>Book event</button>
                                     </div>
                                 </div> <!-- single event -->
                             @endforeach

@@ -38,6 +38,10 @@ class Event extends Model
 
     return $this->belongsTo('App\Models\Sport','sport_id');
    }
+
+   public function bookings(){
+       return $this->hasMany(Bookings::class);
+   }
     /*
     |--------------------------------------------------------------------------
     | SCOPES
